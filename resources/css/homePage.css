@@ -67,15 +67,6 @@ nav li:hover {
     padding: 10px;
 }
 
-.content p{
-    display: grid;
-    justify-content: center;
-    padding-left:400px;
-    padding-right: 400px;
-    color: #FFFFFF;
-    
-}
-
 .content h1, h2{
     display: grid;
     justify-content: center;
@@ -102,7 +93,14 @@ footer {
         margin: 10px;
     }
 
-    
+    .content p{
+        display: grid;
+        justify-content: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        color: #FFFFFF;
+        
+    }
 
     #wrapper {
       grid-template:
@@ -115,6 +113,14 @@ footer {
 }
 
 @media (min-width: 38em) {
+    .content p {
+        display: grid;
+        justify-content: center;
+        padding-left:400px;
+        padding-right: 400px;
+        color: #FFFFFF;
+    }
+    
     #wrapper {
       grid-template:
         " h   h "
@@ -139,6 +145,14 @@ footer {
 
     main {
         margin-left: -270px;
+    }
+
+    .content p {
+        display: grid;
+        justify-content: center;
+        padding-left:400px;
+        padding-right: 400px;
+        color: #FFFFFF;
     }
 
     #wrapper {
