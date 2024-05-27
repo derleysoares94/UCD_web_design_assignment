@@ -135,6 +135,21 @@ fieldset {
     margin: 10px;
 }
 
+/*Send us your storie button*/
+.send_us {
+    background-color: #5cadcb;
+    width: 150px;
+    box-shadow: 0 0 10px #5cadcb;
+    border-radius: 10px;
+}
+
+.send_us a {
+    color: #181818;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 @media (min-width: 65em) {
     main {
         display: grid;
