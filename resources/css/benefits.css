@@ -15,6 +15,12 @@ header {
 main {
     grid-area: m;
 }
+aside {
+    grid-area: a;
+}
+.stories {
+    grid-area: s;
+}
 footer {
     grid-area: f;
 }
@@ -23,8 +29,10 @@ footer {
     color: #5cadcb; 
     display: grid;
     grid-template:
-        "h "
-        "m "
+        "h"
+        "m"
+        "a"
+        "s" 
         "f";
 }
 
@@ -34,7 +42,7 @@ main {
     margin: 30px 120px 40px 120px;
 }
 
-main p, ol {
+main p {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 1rem;
@@ -107,16 +115,21 @@ nav ul li a {
     padding: 10px;
 }
 
-.content h1, h2, h3{
+.content h1, h2{
     display: grid;
     justify-content: center;
     padding: 10px;
 }
 
-iframe {
-    margin-top: 50px;
-    width: 700px;
-    height: 430px;
+aside {
+    margin-left: 120px;
+    margin-right: 120px;
+    text-align: center;
+}
+
+.stories {
+    margin: 100px 120px 100px 120px;
+    text-align: center;
 }
 
 footer {
@@ -128,26 +141,49 @@ footer {
     border-radius: 10px;
 }
 
-fieldset {
-    border: 1px solid #5cadcb;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
+/*Table styles*/
+.food-table {
+    text-align: left;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px #5cadcb;
+}
+
+.food-table thead tr {
+    background-color: #5cadcb;
+    color: #ffffff;
+    text-align: left;
+}
+
+.food-table th,
+.food-table td {
+    padding: 12px 15px;
 }
 
 @media (min-width: 65em) {
     main {
-        display: grid;
-        justify-content: center;
-        margin-left: 300px;
-        margin-right: 300px;
         margin-top: 100px;
+        margin-left: 300px;
+        margin-right: 200px;
+    }
+
+    aside {
+        margin-top: 100px;
+        margin-right: 150px;
+    }
+
+    .stories {
+        margin: 100px 300px 100px 300px;
     }
 
     #wrapper {
         grid-template:
             " h   h   h"
-            " m   m   m"
+            " m   m   a"
+            " s   s   s"
             " f   f   f"
             / 250px 1fr 30%;
         }
